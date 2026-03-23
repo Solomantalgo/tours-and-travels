@@ -10,7 +10,7 @@ const Services = () => {
     },
     {
       icon: <Car size={32} className="text-secondary" />,
-      title: 'Car Rental',
+      title: 'Car Hire',
       description: 'Luxury SUVs and comfortable sedans for your travel needs across the country.',
     },
     {
@@ -21,12 +21,12 @@ const Services = () => {
     {
       icon: <Map size={32} className="text-secondary" />,
       title: 'Tour Packages',
-      description: 'Curated itineraries for cultural, historical, and adventure tours across Ethiopia.',
+      description: 'Tailored packages for families, couples, and groups.',
     },
     {
       icon: <Shield size={32} className="text-secondary" />,
-      title: 'Travel Insurance',
-      description: 'Stay protected throughout your journey with our comprehensive travel insurance plans.',
+      title: 'Hijja $ Umrah',
+      description: 'Our team provides dedicated support for these sacred journeys.',
     },
     {
       icon: <HeartHandshake size={32} className="text-secondary" />,

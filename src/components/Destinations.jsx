@@ -1,34 +1,32 @@
 import React from 'react';
 import { Star, MapPin, ArrowRight } from 'lucide-react';
+import kaba from '../assets/kaba.jpeg';
+import fall from '../assets/fall.jpeg';
 
 const Destinations = () => {
   const destinations = [
     {
       img: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Lalibela Rock Churches',
-      location: 'Northern Ethiopia',
-      price: '$450',
+      title: 'Wildlife safaris and breathtaking landscapes',
+      location: 'Kenya',
       rating: 4.9,
     },
     {
       img: 'https://images.unsplash.com/photo-1543731068-7e0f5beff43a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Simien Mountains',
-      location: 'Amhara Region',
-      price: '$350',
+      title: 'Beautiful beaches, vibrant culture ',
+      location: 'Mombasa Region',
       rating: 4.8,
     },
     {
-      img: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Danakil Depression',
-      location: 'Afar Region',
-      price: '$600',
+      img: kaba,
+      title: 'Visit Kaaba, A holy site and direction of prayer for Muslims worldwide',
+      location: 'Mecca',
       rating: 4.9,
     },
     {
-      img: 'https://images.unsplash.com/photo-1523438097201-512ae7d59c44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Omo Valley',
-      location: 'Southern Ethiopia',
-      price: '$500',
+      img: fall,
+      title: 'Uganda stunning waterfall and wildlife paradise',
+      location: 'Murchison Falls ',
       rating: 4.7,
     },
   ];
@@ -43,7 +41,7 @@ const Destinations = () => {
               Explore Our <span className="text-secondary">Popular</span> Places
             </h2>
             <p className="text-slate-500 text-lg">
-              Explore the breathtaking beauty and rich history of Ethiopia's most iconic destinations.
+              Explore the breathtaking beauty and rich history of most iconic destinations around the world.
             </p>
           </div>
           <button className="btn-outline hidden md:flex items-center space-x-2">

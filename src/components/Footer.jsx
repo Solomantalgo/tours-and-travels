@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plane, Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowRight } from 'lucide-react';
+import { Plane, Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowRight, Youtube } from 'lucide-react';
 import { Link } from 'react-scroll';
 
 const Footer = () => {
@@ -14,17 +14,17 @@ const Footer = () => {
                 <Plane className="h-6 w-6 text-primary" />
               </div>
               <span className="text-2xl font-display font-black tracking-tighter">
-                BS <span className="text-secondary">TOURS</span>
+                BS <span className="text-secondary">TOUR AND TRAVEL</span>
               </span>
             </div>
             <p className="text-slate-400 leading-relaxed">
-              Your trusted partner for authentic and luxury travel experiences across Ethiopia and around the world. We make every journey extraordinary.
+              Your trusted partner for authentic and luxury travel experiences across Uganda and around the world. We bring you closer to the world.
             </p>
             <div className="flex space-x-4">
-              {[Facebook, Instagram, Twitter, Linkedin].map((Icon, i) => (
+              {[Facebook, Instagram, Youtube, Twitter].map((Icon, i) => (
                 <a 
-                  key={i} 
-                  href="#" 
+                  key={2} 
+                  href="https://youtu.be/gRmSVSZK2y4?si=Y1txX6hp06zbASQp" 
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all"
                 >
                   <Icon size={18} />
@@ -62,15 +62,15 @@ const Footer = () => {
             <ul className="space-y-6">
               <li className="flex items-start space-x-4 text-slate-400">
                 <MapPin className="text-secondary flex-shrink-0 mt-1" size={20} />
-                <span>Bole Road, Addis Ababa, Ethiopia</span>
+                <span>Luttah Shopping Center Bwaise</span>
               </li>
               <li className="flex items-center space-x-4 text-slate-400">
                 <Phone className="text-secondary flex-shrink-0" size={20} />
-                <span>+251 911 223 344</span>
+                <span>+2567-4660-0996</span>
               </li>
               <li className="flex items-center space-x-4 text-slate-400">
                 <Mail className="text-secondary flex-shrink-0" size={20} />
-                <span>info@bstours.com</span>
+                <span>bstourandtravel33@gmail.com</span>
               </li>
             </ul>
           </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, Plane, Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
+import logo from '../assets/logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +22,9 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', to: 'home' },
     { name: 'About', to: 'about' },
+    { name: 'Safari', to: 'destinations' },
     { name: 'Services', to: 'services' },
-    { name: 'Destinations', to: 'destinations' },
-    { name: 'Testimonials', to: 'testimonials' },
+    { name: 'Hijja $ Umrah', to: 'testimonials' },
   ];
 
   return (
@@ -35,12 +36,12 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2 cursor-pointer group">
             <div className="bg-primary p-2 rounded-lg group-hover:bg-secondary transition-colors duration-300">
-              <Plane className="h-6 w-6 text-white" />
+              <img src={logo} alt="Logo" className="h-7 w-7" />
             </div>
             <span className={`text-2xl font-display font-black tracking-tighter ${
               isScrolled ? 'text-primary' : 'text-white'
             }`}>
-              BS <span className="text-secondary">TOURS</span>
+              BS <span className="text-secondary">TOUR  AND  TRAVEL</span>
             </span>
           </div>
 
@@ -60,7 +61,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a 
-              href="tel:+251911223344" 
+              href="tel:+256767791696" 
               className="btn-primary flex items-center space-x-2 text-sm"
             >
               <Phone size={18} />
@@ -101,7 +102,7 @@ const Navbar = () => {
           ))}
           <div className="pt-4">
             <a 
-              href="tel:+251911223344" 
+              href="tel:+25746600996" 
               className="btn-primary w-full flex items-center justify-center space-x-2"
             >
               <Phone size={20} />

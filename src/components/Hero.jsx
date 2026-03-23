@@ -20,16 +20,16 @@ const Hero = () => {
         <div className="max-w-2xl text-white">
           <div className="inline-flex items-center space-x-2 bg-secondary/20 backdrop-blur-sm border border-secondary/30 px-4 py-2 rounded-full text-secondary-light font-bold text-sm mb-6 animate-fade-in">
             <Plane size={16} />
-            <span className="tracking-wider uppercase">Explore the world with BS Tours</span>
+            <span className="tracking-wider uppercase">Explore the world with BS Tour and travel</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-display font-black leading-tight mb-6 animate-slide-up">
-            Adventure Awaits <br />
-            <span className="text-secondary">Discover</span> Your Next Journey
+            Bringing You <br />
+            <span className="text-secondary">Closer</span> To The World
           </h1>
           
           <p className="text-xl text-slate-200 mb-10 leading-relaxed max-w-lg animate-slide-up delay-100">
-            From the peaks of the Simien Mountains to the depths of the Danakil Depression, we provide unforgettable experiences across Ethiopia and beyond.
+            From the peaks of Rwenzori to the source of the Nile, we provide unforgettable experiences across Uganda and beyond.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 animate-slide-up delay-200">

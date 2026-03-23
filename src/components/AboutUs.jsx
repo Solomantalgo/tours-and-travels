@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle2, Award, Users, Map } from 'lucide-react';
+import about from '../assets/about.jpg'; // adjust extension if using .png
 
 const AboutUs = () => {
   const stats = [
@@ -16,9 +17,9 @@ const AboutUs = () => {
           <div className="relative group">
             <div className="absolute -inset-4 bg-primary/10 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-1"></div>
             <img 
-              src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+              src={about} 
               alt="Our Story" 
-              className="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+              className="relative rounded-2xl shadow-2xl w-full h-auto object-contain"
             />
             <div className="absolute -bottom-6 -right-6 glass-card p-6 hidden md:block">
               <div className="flex flex-col space-y-4">
@@ -43,7 +44,7 @@ const AboutUs = () => {
               <span className="text-secondary">Extraordinary</span>
             </h2>
             <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-              BS Tour & Travel is a premier tour operator based in Ethiopia, dedicated to providing authentic and luxury travel experiences. Our team of local experts ensures that every trip is meticulously planned and executed with the highest standards of safety and comfort.
+              BS Tour & Travel is a premier tour operator based in Uganda, dedicated to providing authentic and luxury travel experiences. Our team of local experts ensures that every trip is meticulously planned and executed with the highest standards of safety and comfort.
             </p>
             
             <ul className="space-y-4 mb-10">
