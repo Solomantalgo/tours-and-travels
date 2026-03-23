@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="max-w-2xl text-white">
           <div className="inline-flex items-center space-x-2 bg-secondary/20 backdrop-blur-sm border border-secondary/30 px-4 py-2 rounded-full text-secondary-light font-bold text-sm mb-6 animate-fade-in">
             <Plane size={16} />
-            <span className="tracking-wider uppercase">Explore the world with BS Tour and travel</span>
+            <span className="tracking-wider uppercase">Explore the worl with BS Tour and travel</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-display font-black leading-tight mb-6 animate-slide-up">
