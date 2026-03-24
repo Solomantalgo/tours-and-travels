@@ -1,8 +1,22 @@
-import React from 'react';
-import { Plane, Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowRight, Youtube } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowRight, Youtube } from 'lucide-react';
 import { Link } from 'react-scroll';
+import logo from '../assets/logo.jpg';
 
 const Footer = () => {
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+
+  const handleNewsletterSubmit = (event) => {
+    event.preventDefault();
+
+    const mainEmail = 'bstourandtravel33@gmail.com';
+    const subject = encodeURIComponent('Newsletter Subscription');
+    const body = encodeURIComponent(`Please subscribe me to your newsletter. My email is: ${newsletterEmail}`);
+
+    window.location.href = `mailto:${mainEmail}?subject=${subject}&body=${body}`;
+    setNewsletterEmail('');
+  };
+
   return (
     <footer className="bg-primary text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +25,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <div className="bg-white p-2 rounded-lg">
-                <Plane className="h-6 w-6 text-primary" />
+                <img src={logo} alt="BS Tour and Travel" className="h-6 w-6 object-contain" />
               </div>
               <span className="text-2xl font-display font-black tracking-tighter">
                 BS <span className="text-secondary">TOUR AND TRAVEL</span>
@@ -81,10 +95,13 @@ const Footer = () => {
               Newsletter
             </h4>
             <p className="text-slate-400 mb-6">Subscribe to get the latest travel deals and news.</p>
-            <form className="relative">
+            <form className="relative" onSubmit={handleNewsletterSubmit}>
               <input 
                 type="email" 
+                value={newsletterEmail}
+                onChange={(e) => setNewsletterEmail(e.target.value)}
                 placeholder="Email Address" 
+                required
                 className="w-full bg-white/5 border border-white/10 rounded-full px-6 py-3 text-sm focus:outline-none focus:border-secondary transition-colors"
               />
               <button 
@@ -94,6 +111,7 @@ const Footer = () => {
                 <ArrowRight size={16} />
               </button>
             </form>
+            <p className="text-xs text-slate-400 mt-2">A draft email will open to <span className="font-semibold">bstourandtravel33@gmail.com</span>.</p>
           </div>
         </div>
 
