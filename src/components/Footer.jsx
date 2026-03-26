@@ -116,7 +116,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-slate-500 text-sm">
-          <p>© {new Date().getFullYear()} BS Tour & Travel. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} BS Tour & Travel. All rights reserved. Certified by; Travel-port.</p>
           <div className="flex space-x-8">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
