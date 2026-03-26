@@ -1,12 +1,12 @@
 import React from 'react';
 import { CheckCircle2, Award, Users, Map } from 'lucide-react';
-import about from '../assets/about.jpg'; // adjust extension if using .png
+import img2 from '../assets/img2.jpg';
 
 const AboutUs = () => {
   const stats = [
-    { icon: <Award className="text-secondary" />, label: 'Years Experience', value: '10+' },
+    { icon: <Award className="text-secondary" />, label: 'Years Experience', value: '5+' },
     { icon: <Users className="text-secondary" />, label: 'Happy Clients', value: '5K+' },
-    { icon: <Map className="text-secondary" />, label: 'Destinations', value: '50+' },
+    { icon: <Map className="text-secondary" />, label: 'Destinations', value: '10+' },
   ];
 
   return (
@@ -17,7 +17,7 @@ const AboutUs = () => {
           <div className="relative group">
             <div className="absolute -inset-4 bg-primary/10 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-1"></div>
             <img 
-              src={about} 
+              src={img2} 
               alt="Our Story" 
               className="relative rounded-2xl shadow-2xl w-full h-auto object-contain"
             />

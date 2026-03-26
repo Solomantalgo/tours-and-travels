@@ -24,7 +24,7 @@ const Navbar = () => {
     { name: 'About', to: 'about' },
     { name: 'Safari', to: 'destinations' },
     { name: 'Services', to: 'services' },
-    { name: 'Hijja $ Umrah', to: 'testimonials' },
+    { name: 'Hijja & Umrah', to: 'testimonials' },
   ];
 
   return (

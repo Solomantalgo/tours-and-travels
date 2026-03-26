@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Camera, Star } from 'lucide-react';
 import kaba from '../assets/kaba.jpeg';
 import fall from '../assets/fall.jpeg';
+import img3 from '../assets/img3.jpg';
+import img4 from '../assets/img4.jpg';
 
 const Testimonials = () => {
   const [current, setCurrent] = useState(0);
@@ -11,9 +13,9 @@ const Testimonials = () => {
 
   const slides = [
     {
-      image: fall,
-      title: 'Murchison Falls, Uganda',
-      description: "Experience the raw power of the Nile at Murchison Falls, where the world's longest river forces itself through a narrow 7-meter gap. A fruitful moment of natural wonder."
+      image: img4,
+      title: 'Hijja and Umrah travel preparations',
+      description: "We help you prepare for your Hijja and Umrah journeys with expert guidance, ensuring a smooth and spiritually fulfilling experience. Our comprehensive services cover everything from visa processing to accommodation arrangements, making your pilgrimage stress-free and memorable."
     },
     {
       image: kaba,
@@ -21,15 +23,11 @@ const Testimonials = () => {
       description: "A serene and spiritual journey to the holy city of Mecca. Our guided Umrah packages ensure a peaceful and well-organized pilgrimage for every traveler."
     },
     {
-      image: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      title: 'Massai Mara, Kenya',
-      description: "Witness the magic of the African savannah in Kenya. From the majestic lions of the Mara to the vast landscapes, every safari is a discovery of life's abundance."
+      image: img3,
+      title: 'At the KABA,',
+      description: "A place of profound spirituality and unity, the Kaaba in Mecca is the heart of Islamic faith. Our tours offer an unforgettable experience to witness this sacred site up close."
     },
-    {
-      image: 'https://images.unsplash.com/photo-1516422275727-8387d0f1932c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      title: 'Bwindi Forest, Uganda',
-      description: "An intimate encounter with the mountain gorillas in Bwindi Impenetrable Forest. Trekking through the ancient canopy is a once-in-a-lifetime fruitful experience."
-    }
+    
   ];
 
   const nextSlide = () => {

@@ -25,7 +25,7 @@ const Services = () => {
     },
     {
       icon: <Shield size={32} className="text-secondary" />,
-      title: 'Hijja $ Umrah',
+      title: 'Hijja & Umrah',
       description: 'Our team provides dedicated support for these sacred journeys.',
     },
     {

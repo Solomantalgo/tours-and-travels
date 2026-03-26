@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { ArrowRight, Plane, MapPin, Calendar } from 'lucide-react';
+import heroImage from '../assets/8.jpg';
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       {/* Background with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          src={heroImage} 
           alt="Travel Adventure" 
           className="w-full h-full object-cover"
         />
